@@ -1,7 +1,41 @@
-let userName = '';
+let userName = "Zachary";
+let userQuestion = "When will I get hired as a jr dev?";
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = "";
 
 if (userName) {
-  console.log(`Hey ${userName}!`);
+  console.log(`Hey ${userName}! You asked, "${userQuestion}"`);
 } else {
   console.log("Bitch, enter your name!");
 }
+
+switch (randomNumber) {
+  case 0:
+    console.log("Its certain");
+    break;
+  case 1:
+    console.log("Eh. Its pretty much happening");
+    break;
+  case 2:
+    console.log("Reply hazy try again");
+    break;
+  case 3:
+    console.log("Cant predict right now");
+    break;
+  case 4:
+    console.log("AHA! Dont count on it");
+    break;
+  case 5:
+    console.log("Sorry bro. My sources say no");
+    break;
+  case 6:
+    console.log("Ooo. Its not looking so good");
+    break;
+  case 7:
+    console.log("The starts are pointing to yes");
+    break;
+  default:
+    console.log("Maybe this shouldnt happen...");
+    break;
+}
+//output varies. Hey Zachary! You asked when will I get hired as a developer?
